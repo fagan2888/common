@@ -1,0 +1,14 @@
+function x=find_good_data(yy,mask);
+T=size(yy,1);
+N=size(yy,2);
+x=[];
+one=ones(T,1);
+for i=1:N;
+  bad=find(abs(yy(:,i)-mask) < 0.001);
+  good=one;
+  good(bad)=0;
+  igood=find(good);
+  if rows(igood) == T;
+  x=[x yy(:,i)];  
+  end;
+end;

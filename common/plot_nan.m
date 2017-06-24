@@ -1,0 +1,15 @@
+function plot_nan(X,argv);
+color=['b-'; 'g-'; 'r-'; 'c-'; 'm-'; 'y-'];
+N=cols(X);
+if rows(argv)== [];
+dates=(1:1:rows(X))';
+else;
+  dates=argv;
+end;  
+for i=1:N;
+t1=find(~isnan(X(:,i)));
+Y1=X(t1,i);
+plot(dates(t1),Y1,color(i));
+hold on;
+end;
+hold off;

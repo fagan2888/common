@@ -1,0 +1,13 @@
+function latexmatrix(X,str);
+str0=str;
+	if nargin==1; str1= '%5.3f'; str= '& %5.4f ';
+	else;
+        str1=str; str=['& ' str];
+	end;
+n1=rows(X);
+n2=cols(X);
+fmt=[str1  repmat(str,1,n2-1) '\\\\'];
+if length(str0)>20; fmt=str0; end;
+for i=1:n1;
+disp(sprintf(fmt,X(i,:)));
+end;

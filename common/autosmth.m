@@ -1,0 +1,14 @@
+function [xx,sm]= autosmth(x);
+n=size(x,1);
+xa=sort(x,1);
+iqr=xa(round(3*n/4),1)-xa(round(n/4),1);
+a=min([std(x);iqr/1.34]);
+h=1.06*a*n^(-0.2);
+st=(xa(n,1)-xa(1,1)+4*h)/99;
+xx=xa(1,1)-2*h:st:xa(n,1)+2*h;
+sm=zeros(100,1);
+for ic=1:100;
+sm(ic,1)=mean(exp(-0.5*((x-xx(1,ic))/h).^2));
+end;
+sm=sm/(h*sqrt(2*pi));
+xx=xx';

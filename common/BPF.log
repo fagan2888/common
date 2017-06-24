@@ -1,0 +1,89 @@
+This is METAFONT, Version 2.7182 (Web2C 7.3.1) (base=mf 2001.12.12)  24 JUN 2002 14:55
+**BPF.M bpf.m
+(BPF.M
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.1 function yf=bpf(
+                    y,up,dn,K);
+? l^^X
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? q
+OK, entering batchmode...
+! An expression can't begin with `['.
+<inserted text> 
+                0
+<to be read again> 
+                   [
+l.11 x=[
+        up dn];
+I'm afraid I need some sort of value in order to continue,
+so I've tentatively inserted `0'. You may want to
+delete this zero and insert something else;
+see Chapter 27 of The METAFONTbook for an example.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   [
+<to be read again> 
+                   (up.dn)
+<to be read again> 
+                   ]
+l.11 x=[up dn]
+              ;
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> disp
+! Isolated expression.
+<to be read again> 
+                   (
+l.12 disp(
+          ' ')
+I couldn't find an `=' or `:=' after the
+expression that is shown above this error message,
+so I guess I'll just ignore it and carry on.
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.12 disp(
+          ' ')
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+>> (0,1)
+>> 0
+! Equation cannot be performed (pair=numeric).
+<to be read again> 
+                   (
+l.31  dn=x(1); up=x(
+                    2);
+I'm sorry, but I don't know how to make such things equal.
+(See the two expressions just above the error message.)
+
+! Extra tokens will be flushed.
+<to be read again> 
+                   (
+l.31  dn=x(1); up=x(
+                    2);
+I've just read as much of that statement as I could fathom,
+so a semicolon should have been next. It's very puzzling...
+but I'll try to get myself back together, by ignoring
+everything up to the next `;'. Please insert a semicolon
+now in front of anything that you don't want me to delete.
+(See Chapter 27 of The METAFONTbook for an example.)
+
+ )

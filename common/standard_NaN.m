@@ -1,0 +1,11 @@
+function x=standard_NaN(yy,mask);
+T=size(yy,1);
+N=size(yy,2);
+x=yy;
+one=ones(T,1);
+for i=1:N;
+  igood=find(not(isnan(yy(:,i))));
+  y=yy(igood,i);
+  z= (y-mean(y))/std(y); 
+  x(igood,i)=z;
+end;
